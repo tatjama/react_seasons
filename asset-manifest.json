@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react_seasons/static/css/main.d1b05096.chunk.css",
+    "main.js": "/react_seasons/static/js/main.e51af2ae.chunk.js",
+    "main.js.map": "/react_seasons/static/js/main.e51af2ae.chunk.js.map",
+    "runtime-main.js": "/react_seasons/static/js/runtime-main.5ef33902.js",
+    "runtime-main.js.map": "/react_seasons/static/js/runtime-main.5ef33902.js.map",
+    "static/js/2.8ebcadcb.chunk.js": "/react_seasons/static/js/2.8ebcadcb.chunk.js",
+    "static/js/2.8ebcadcb.chunk.js.map": "/react_seasons/static/js/2.8ebcadcb.chunk.js.map",
+    "index.html": "/react_seasons/index.html",
+    "precache-manifest.e761f928a5bc1287f1961e3d79c4d4ce.js": "/react_seasons/precache-manifest.e761f928a5bc1287f1961e3d79c4d4ce.js",
+    "service-worker.js": "/react_seasons/service-worker.js",
+    "static/css/main.d1b05096.chunk.css.map": "/react_seasons/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.8ebcadcb.chunk.js.LICENSE.txt": "/react_seasons/static/js/2.8ebcadcb.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/react_seasons/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5ef33902.js",
+    "static/js/2.8ebcadcb.chunk.js",
+    "static/css/main.d1b05096.chunk.css",
+    "static/js/main.e51af2ae.chunk.js"
+  ]
+}
