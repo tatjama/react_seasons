@@ -23,9 +23,9 @@ class App extends React.Component{
          console.log(this.state.lat);
         return(
             <div>
-                {/*We put component Season Display and give it properti lat*/}
+                {/*We put component Season Display and give it property lat*/}
                 <SeasonDisplay lat = {this.state.lat}/>
-                {console.log(<SeasonDisplay lat = {this.state.lat}/>)}
+                
                 Latitude: {this.state.lat} <br/>
                 Error: {this.state.errorMessage}
             </div>
