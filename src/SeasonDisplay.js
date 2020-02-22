@@ -16,26 +16,23 @@ const SeasonDisplay = ( props) =>{
     } 
     const displaySeason = ()=>{
         if(season() ==='winter'){
-            return (
-                <div className = "displaySeason winter">
-                    <i className = "left massive snowflake icon"></i>
-                    <div className = "central"><h1>Brr, it's cold</h1></div>
-                    <i className = "right massive snowflake icon"></i>
-                </div>
-            )
+            return  'snowflake'
         }
-        return (
-            <div className = "displaySeason summer">
-                <i className = "left massive sun icon"></i>
-                <div className = "central"><h1>Let's go to the beach</h1></div>
-                <i className = "right massive sun icon"></i>
-            </div>
-        )    
+            return    'sun'    
+    }
+    const text = ()=>{
+        if(season() === 'winter'){
+            return "Brr, it's cold"
+        }
+            return "Let's go to the beach!"
     }
 
     return(        
-        <div>         
-            {displaySeason()}
+        <div className = {season()}>
+                <i className = {`left massive ${displaySeason()} icon`}></i>
+                <div className = "central"><h1>{text()}</h1></div>
+                <i className = {`right massive ${displaySeason()} icon`}></i>  
+          
         </div>
     );
 };
