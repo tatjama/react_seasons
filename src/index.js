@@ -18,14 +18,25 @@ class App extends React.Component{
     )
      }
      
+     renderConfig(){
+         if(this.state.lat && !this.state.errorMessage){
+             return 'Javi sezonu'
+         }else if(!this.state.lat && this.state.errorMessage){
+             return 'Ispisi gresku'
+         }
+         return 'ucitavanje'
+     }
+         
+     
      
      render(){
          console.log(this.state.lat);
+         console.log(this.renderConfig());
         return(
             <div>
                 {/*We put component Season Display and give it property lat*/}
-                <SeasonDisplay lat = {this.state.lat}/>
-                
+                <SeasonDisplay lat = {this.state.lat}/>   
+                stanje:{this.renderConfig()}  <br/>           
                 Latitude: {this.state.lat} <br/>
                 Error: {this.state.errorMessage}
             </div>
