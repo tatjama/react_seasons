@@ -1,4 +1,5 @@
 import React from 'react';
+import './SeasonDisplay.css';
 
 //function return number 0=januar, 1=februar...11=decembar
 const month = new Date().getMonth();
@@ -16,18 +17,18 @@ const SeasonDisplay = ( props) =>{
     const displaySeason = ()=>{
         if(season() ==='winter'){
             return (
-                <div>
-                    <i className = "left snowflake icon"></i>
-                    <div className = "central">"Brr, it's cold"</div>
-                    <i className = "right snowflake icon"></i>
+                <div className = "displaySeason winter">
+                    <i className = "left massive snowflake icon"></i>
+                    <div className = "central"><h1>Brr, it's cold</h1></div>
+                    <i className = "right massive snowflake icon"></i>
                 </div>
             )
         }
         return (
-            <div>
-                <i className = "left sun icon"></i>
-                <div className = "central">"Let's go to the beach"</div>
-                <i className = "right sun icon"></i>
+            <div className = "displaySeason summer">
+                <i className = "left massive sun icon"></i>
+                <div className = "central"><h1>Let's go to the beach</h1></div>
+                <i className = "right massive sun icon"></i>
             </div>
         )    
     }

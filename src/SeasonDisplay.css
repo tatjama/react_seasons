@@ -1,0 +1,28 @@
+.left {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.central {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.right {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+.snowflake {
+    color: blue;
+}
+.sun {
+    color: red;
+}
+.winter {
+    background-color: aliceblue;
+}
+.summer {
+    background-color: orange;
+}
