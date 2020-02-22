@@ -2,12 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import SeasonDisplay from './SeasonDisplay';
 
-class App extends React.Component{
-    constructor(props){
-        super(props);
-    //Here we put state, values that are before fetch data    
-        this.state = {lat: null, errorMessage :''}
-    }
+class App extends React.Component{    
+        
+    //Here we put state, values that are before fetch data 
+    //state out of constructor stand without this    
+        state = {lat: null, errorMessage :''}
+    
     
     //Here we put data that we fetch when we are loading page for the first time
     //We change state with function setState ONLY!!!
