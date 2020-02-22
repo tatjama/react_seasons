@@ -4,10 +4,18 @@ import React from 'react';
 const month = new Date().getMonth();
 console.log(month);
 
-const SeasonDisplay = () =>{
+const SeasonDisplay = ( props) =>{
+    console.log(props.lat);
+
+   const season =()=>{
+    return 'season'
+   }
+    
+    console.log(season());
     return(
+        
         <div>
-            Season 
+            {props.season}
         </div>
     );
 };
