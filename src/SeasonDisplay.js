@@ -13,11 +13,28 @@ const SeasonDisplay = ( props) =>{
     }     
         return props.lat>0? 'winter':'summer'      
     } 
+    const displaySeason = ()=>{
+        if(season() ==='winter'){
+            return (
+                <div>
+                    <i className = "left snowflake icon"></i>
+                    <div className = "central">"Brr, it's cold"</div>
+                    <i className = "right snowflake icon"></i>
+                </div>
+            )
+        }
+        return (
+            <div>
+                <i className = "left sun icon"></i>
+                <div className = "central">"Let's go to the beach"</div>
+                <i className = "right sun icon"></i>
+            </div>
+        )    
+    }
 
     return(        
-        <div>
-            Season display:
-            {season()}
+        <div>         
+            {displaySeason()}
         </div>
     );
 };
