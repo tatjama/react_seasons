@@ -6,7 +6,7 @@ console.log(month);
 
 const SeasonDisplay = ( props) =>{
     console.log(props.lat);
-
+/* Arrow function season . Give us season depending of two parameters lat and month*/
    const season =()=>{
     return 'season'
    }
@@ -15,7 +15,8 @@ const SeasonDisplay = ( props) =>{
     return(
         
         <div>
-            {props.season}
+            Season display:
+            {season()}
         </div>
     );
 };
